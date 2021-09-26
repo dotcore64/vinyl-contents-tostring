@@ -42,7 +42,7 @@ Returns a promise to the contents of the vinyl file, regardless of stream or buf
 
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
 
-[build-badge]: https://github.com/dotcore64/vinyl-contents-tostring/actions/workflows/test.yml/badge.svg?event=push
+[build-badge]: https://img.shields.io/github/workflow/status/dotcore64/vinyl-contents-tostring/test/master?style=flat-square
 [build]: https://github.com/dotcore64/vinyl-contents-tostring/actions
 
 [npm-badge]: https://img.shields.io/npm/v/vinyl-contents-tostring.svg?style=flat-square

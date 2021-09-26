@@ -1,6 +1,6 @@
 {
   "name": "vinyl-contents-tostring",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Convert vinyl file content to string",
   "main": "src/index.js",
   "scripts": {
@@ -14,8 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/dotcore64/vinyl-contents-tostring.git"
   },
-  "files": ["src"],
-  "keywords": ["gulp", "vinyl"],
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "gulp",
+    "vinyl"
+  ],
   "author": "Julian Grinblat <julian@dotcore.co.il>",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {

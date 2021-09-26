@@ -8,7 +8,6 @@
     "pretest": "npm run lint",
     "test": "mocha",
     "cover": "nyc npm test",
-    "coveralls": "npm run cover && nyc report --reporter=text-lcov | coveralls",
     "prepare": "npm run test"
   },
   "repository": {

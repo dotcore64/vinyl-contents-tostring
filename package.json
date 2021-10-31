@@ -6,8 +6,7 @@
   "scripts": {
     "lint": "eslint --cache .",
     "test": "mocha",
-    "cover": "c8 npm test",
-    "prepare": "npm test"
+    "cover": "c8 npm test"
   },
   "repository": {
     "type": "git",

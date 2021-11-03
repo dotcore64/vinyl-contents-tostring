@@ -2,11 +2,23 @@
   "name": "vinyl-contents-tostring",
   "version": "4.0.0",
   "description": "Convert vinyl file content to string",
-  "main": "src/index.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "engines": {
+    "node": ">=12.2"
+  },
   "scripts": {
     "lint": "eslint --cache .",
+    "build": "rollup -c",
     "test": "mocha",
-    "cover": "c8 npm test"
+    "cover": "c8 npm test",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -39,6 +51,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-mocha": "^9.0.0",
     "eslint-plugin-node": "^11.1.0",
-    "mocha": "^9.1.3"
+    "mocha": "^9.1.3",
+    "rollup": "^2.59.0"
   }
 }

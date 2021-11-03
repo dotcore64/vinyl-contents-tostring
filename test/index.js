@@ -1,8 +1,10 @@
-const File = require('vinyl');
-const { PassThrough } = require('stream');
-const { expect } = require('chai');
+import File from 'vinyl';
+import { PassThrough } from 'stream';
+import { expect } from 'chai';
 
-const vinylToString = require('..');
+// https://github.com/import-js/eslint-plugin-import/issues/1649
+// eslint-disable-next-line import/no-unresolved,node/no-missing-import
+import vinylToString from 'vinyl-contents-tostring';
 
 describe('vinyl-contents-tostring', () => {
   describe('in streaming mode', () => {

@@ -1,5 +1,6 @@
-import File from 'vinyl';
 import { PassThrough } from 'stream';
+import { createRequire } from 'module';
+import File from 'vinyl';
 import { expect } from 'chai';
 
 // https://github.com/import-js/eslint-plugin-import/issues/1649
@@ -63,5 +64,10 @@ describe('vinyl-contents-tostring', () => {
     it('should throw a type error', () => (
       expect(vinylToString({})).to.be.rejectedWith(TypeError, /First argument must be a Vinyl file/)
     ));
+
+    it('should require cjs module', () => {
+      const require = createRequire(import.meta.url);
+      expect(require('..')).to.be.a('function');
+    });
   });
 });

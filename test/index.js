@@ -1,4 +1,4 @@
-import { PassThrough } from 'stream';
+import { PassThrough } from 'node:stream';
 import File from 'vinyl';
 import { expect } from 'chai';
 

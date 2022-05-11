@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/dotcore64/vinyl-contents-tostring#readme",
   "dependencies": {
-    "stream-to-string": "^1.2.0",
+    "bl": "^5.0.0",
     "vinyl": "^2.2.1"
   },
   "devDependencies": {

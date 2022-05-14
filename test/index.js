@@ -55,10 +55,10 @@ describe('vinyl-contents-tostring', () => {
   });
 
   describe('misc tests', () => {
-    it('should return an empty string', () => {
+    it('should return an undefined', () => {
       const vinylFile = new File({ path: 'baz' });
 
-      return expect(vinylToString(vinylFile)).become('');
+      return expect(vinylToString(vinylFile)).become();
     });
 
     it('should throw a type error', () => (

@@ -10,4 +10,4 @@ export default (file, enc) => (!isVinyl(file) // eslint-disable-line no-nested-t
     ? Promise.resolve(file.contents.toString(enc))
     : file.isStream()
       ? fromCallback((cb) => pipeline(file.contents, bl(cb))).then((buf) => buf.toString(enc))
-      : Promise.resolve(''));
+      : Promise.resolve());

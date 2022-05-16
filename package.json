@@ -3,12 +3,8 @@
   "version": "4.1.1",
   "description": "Convert vinyl file content to string",
   "type": "module",
-  "main": "dist/index.cjs",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
+    ".": "./index.js",
     "./package.json": "./package.json"
   },
   "engines": {
@@ -16,10 +12,8 @@
   },
   "scripts": {
     "lint": "eslint --cache .",
-    "build": "rollup -c",
     "test": "mocha",
-    "cover": "c8 npm test",
-    "prepare": "npm run build"
+    "cover": "c8 npm test"
   },
   "repository": {
     "type": "git",
@@ -53,7 +47,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-mocha": "^10.0.4",
     "eslint-plugin-node": "^11.1.0",
-    "mocha": "^10.0.0",
-    "rollup": "^2.72.1"
+    "mocha": "^10.0.0"
   }
 }

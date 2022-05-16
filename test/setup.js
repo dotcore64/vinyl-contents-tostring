@@ -1,6 +1,4 @@
-import { createRequire } from 'module';
 import { use } from 'chai';
 
-const require = createRequire(import.meta.url);
-
-use(require('chai-as-promised'));
+// eslint-disable-next-line unicorn/no-await-expression-member
+use((await import('chai-as-promised')).default);

@@ -16,14 +16,14 @@ $ npm install vinyl-contents-tostring
 ## Usage
 
 ```js
-import { promisify } from 'node:util';
+import { callbackify } from 'node:util';
 import vfs from 'vinyl-fs';
 import map from 'map-stream';
 import toString from 'vinyl-contents-tostring';
 
 vfs.src(['./package.json'])
   .pipe(map(
-    promisify(file => toString(file).then(contents => console.log(contents))),
+    callbackify(file => toString(file).then(contents => console.log(contents))),
   ));
 ```
 

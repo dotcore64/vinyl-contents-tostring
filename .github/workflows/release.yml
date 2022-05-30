@@ -26,8 +26,6 @@ jobs:
       run: npm test
 
     - name: Publish
-      uses: mmarchini-oss/npm-otp-publish@v0
-      with:
-        npm_token: ${{ secrets.NPM_TOKEN }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        github_actor: ${{ github.actor }}
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

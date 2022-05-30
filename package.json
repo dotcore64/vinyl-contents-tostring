@@ -1,6 +1,6 @@
 {
   "name": "vinyl-contents-tostring",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "Convert vinyl file content to string",
   "type": "module",
   "exports": {

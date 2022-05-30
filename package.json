@@ -20,7 +20,7 @@
     "url": "git+https://github.com/dotcore64/vinyl-contents-tostring.git"
   },
   "files": [
-    "dist"
+    "index.js"
   ],
   "keywords": [
     "gulp",

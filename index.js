@@ -5,9 +5,9 @@ import fromCallback from 'p-from-callback';
 
 const noop = () => {}; // TODO: remove and replace with node:stream/promises (node>=16)
 const { isVinyl } = Vinyl; // TODO: Use named imports when available
-export default (file, enc) => (!isVinyl(file) // eslint-disable-line no-nested-ternary
+export default (file, enc) => (!isVinyl(file)
   ? Promise.reject(new TypeError('First argument must be a Vinyl file'))
-  : file.isBuffer() // eslint-disable-line no-nested-ternary
+  : file.isBuffer()
     ? Promise.resolve(file.contents.toString(enc))
     : file.isStream()
       ? fromCallback((cb) => pipeline(file.contents, bl(cb), noop)).then((buf) => buf.toString(enc))

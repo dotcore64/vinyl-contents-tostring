@@ -35,7 +35,7 @@
   "dependencies": {
     "bl": "^5.0.0",
     "p-from-callback": "^1.0.0",
-    "vinyl": "^2.2.1"
+    "vinyl": "^3.0.0"
   },
   "devDependencies": {
     "c8": "^7.12.0",

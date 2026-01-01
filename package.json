@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/dotcore64/vinyl-contents-tostring#readme",
   "dependencies": {
-    "bl": "^6.1.5",
+    "bl": "^6.1.6",
     "p-from-callback": "^3.0.0",
     "vinyl": "^3.0.1"
   },

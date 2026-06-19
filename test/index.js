@@ -1,6 +1,7 @@
 import { PassThrough } from "node:stream";
-import File from "vinyl";
+
 import { expect } from "chai";
+import File from "vinyl";
 
 // https://github.com/import-js/eslint-plugin-import/issues/1649
 // eslint-disable-next-line import/no-unresolved
